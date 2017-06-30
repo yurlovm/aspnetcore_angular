@@ -64,10 +64,13 @@ Websocket also has support for JWT validation.
 
 `Remove from keys.json with your secret key from control version!!`
 
+This application use basic realization of Identity framework without EntityFrameowork or any other real DB. You can change working logic with DB in CustomUserManager and CustomUserStore classes.
+
+Use BCrypt for password hashing in BCryptPasswordHasher class.
+
+
 # Websocket
 
 Websocket has basic realization of invoking server methods from client and client methods from server.
 
-This application use basic realization of Identity framework without EntityFrameowork or any other real DB. You can change working logic with DB in CustomUserManager and CustomUserStore classes.
 
-Use BCrypt for password hashing in BCryptPasswordHasher class.
