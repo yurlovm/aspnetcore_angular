@@ -5,7 +5,7 @@ import { NotFoundComponent }              from './not-found.component';
 import { ControlErrorMessagesComponent }  from './control-error-messages.component';
 import { ComposeMessageComponent }        from './compose-message/compose-message.component';
 import { MdProgressSpinnerModule }        from '@angular/material';
-import {MdButtonModule}                   from '@angular/material';
+import { MdButtonModule }                 from '@angular/material';
 
 @NgModule({
   imports:      [ CommonModule, FormsModule, MdProgressSpinnerModule, MdButtonModule ],
