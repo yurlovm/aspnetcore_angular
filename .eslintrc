@@ -1,0 +1,23 @@
+﻿{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "node": true,
+    "es6": true,
+    "mongo": true,
+    "serviceworker": true,
+    "jasmine": true
+  },
+  "extends": ["eslint:recommended", "htmlacademy/es6"],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "rules": {
+    "linebreak-style": [
+      "error",
+      "windows"
+    ],
+    "vars-on-top": 1
+  }
+}

@@ -1,0 +1,149 @@
+/* Master Styles */
+@import "normalize.css/normalize.css";
+@import "./constants.css";
+
+html {
+  box-sizing: border-box;
+
+  background-color: var(--mainColor);
+}
+
+/**, *:before, *:after {
+  box-sizing: inherit;
+}*/
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #369;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+h2, h3 {
+  color: #444;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+body {
+  margin: 2em;
+}
+body, input[text], button {
+  color: #888;
+
+  font-family: Cambria, Georgia;
+}
+a {
+  cursor: pointer;
+  cursor: hand;
+}
+button {
+  padding: 5px 10px;
+
+  cursor: pointer;
+  cursor: hand;
+
+  border: none;
+  border-radius: 4px;
+  background-color: #eee;
+
+  font-family: Arial;
+}
+button:hover {
+  background-color: #cfd8dc;
+}
+button:disabled {
+  cursor: auto;
+
+  color: #aaa;
+  background-color: #eee;
+}
+
+/* Navigation link styles */
+nav a {
+  display: inline-block;
+
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 5px 10px;
+
+  text-decoration: none;
+
+  border-radius: 4px;
+  background-color: #eee;
+}
+nav a:visited, a:link {
+  color: #607D8B;
+}
+nav a:hover {
+  color: #039be5;
+  background-color: #CFD8DC;
+}
+nav a.active {
+  color: #039be5;
+}
+
+/* items class */
+.items {
+  width: 24em;
+  margin: 0 0 2em 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+.items li {
+  position: relative;
+  left: 0;
+
+  height: 1.6em;
+  margin: .5em;
+  padding: .3em 0;
+
+  cursor: pointer;
+
+  border-radius: 4px;
+  background-color: #EEE;
+}
+.items li:hover {
+  left: .1em;
+
+  color: #607D8B;
+  background-color: #DDD;
+}
+.items li.selected {
+  color: white;
+  background-color: #CFD8DC;
+}
+.items li.selected:hover {
+  background-color: #BBD8DC;
+}
+.items .text {
+  position: relative;
+  top: -3px;
+}
+.items .badge {
+  position: relative;
+  top: -4px;
+  left: -1px;
+
+  display: inline-block;
+
+  height: 1.8em;
+  margin-right: .8em;
+  padding: 0.8em 0.7em 0 0.7em;
+
+  color: white;
+  border-radius: 4px 0 0 4px;
+  background-color: #607D8B;
+
+  font-size: small;
+  line-height: 1em;
+}
+/* everywhere else */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}

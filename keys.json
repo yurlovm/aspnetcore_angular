@@ -1,0 +1,7 @@
+﻿{
+	"JWT": {
+		"issuer": "WEBAPP",
+		"audience": "WEBAPP",
+		"secret": "5F9YtpPbjHUx49w_QVFnu4Uzv9mUEd7aQQja_LDPNyx5F9YtpPbjHUx49w_QVFnu4Uzv9mUEd7aQQja_LDPNyx5F9YtpPbjHUx49w_QVFnu4Uzv9mUEd7aQQja_LDPNyx"
+	}
+}

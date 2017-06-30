@@ -1,0 +1,19 @@
+<div class="container">
+  <h2 class="header_text">LOGIN</h2>
+  <form novalidate [formGroup]="user" (ngSubmit)="login()" *ngIf="!(isLoggedIn()) && !isWaiting" #loginForm>
+    <div class="item">
+      <input type="text" name="userlogin" placeholder="Логин" formControlName="userlogin" autocomplete ="username" required autofocus>
+      <my-control-error-messages [control] = "user.get('userlogin')"> </my-control-error-messages>
+    </div>
+    <div class="item">
+      <input type="password" name="password" placeholder="Пароль" formControlName="password" required autocomplete ="current-password">
+      <my-control-error-messages [control] = "user.get('password')"> </my-control-error-messages>
+    </div>
+    <div class="item">
+      <button class="button_login" md-raised-button color="primary" type="submit" [disabled]="user.invalid">Войти</button>
+    </div>
+  </form>
+  <div class="error_msg">{{errMsg}}</div>
+  <button (click)="logout()" md-raised-button color="primary" *ngIf="isLoggedIn()">Выйти</button>
+  <md-spinner *ngIf="isWaiting"></md-spinner>
+</div>

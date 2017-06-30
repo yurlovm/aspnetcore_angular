@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+
+  min-height: 100vh;
+  margin: auto;
+
+  flex-flow: column nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.item {
+  padding: 0.5rem;
+}
+
+.button_login {
+  width: 100%;
+}
+
+.header_text{
+  text-align: center;
+  white-space: pre-line;
+}
+
+.error_msg {
+  color: red;
+
+  font-size: 12px;
+}

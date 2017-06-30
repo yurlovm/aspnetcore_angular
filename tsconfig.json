@@ -1,0 +1,47 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "outDir": "./dist/out-tsc",
+        "allowJs": false,
+        "target": "es5",
+        "module": "es2015",
+        "moduleResolution": "node",
+        "baseUrl": "",
+        "declaration": false,
+        "noImplicitAny": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "suppressImplicitAnyIndexErrors":true,
+        "sourceMap": true,
+        "pretty": true,
+        "skipLibCheck": true,
+        "rootDir": "./src",
+        "lib": [
+          "es2016",
+          "dom"
+        ],
+        "typeRoots": ["node_modules/@types"],
+        "noStrictGenericChecks": true
+    },
+    "awesomeTypescriptLoaderOptions": {
+      "forkChecker": true,
+      "useWebpackText": true
+    },
+    "angularCompilerOptions": {
+      "genDir": "./aot",
+      "skipMetadataEmit" : true
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "images",
+        "css",
+        "**/*.ngfactory.ts",
+        "**/*.shim.ts",
+        "**/*.spec.ts",
+        "src/test.ts",
+        "src/polyfills.ts"
+    ]
+}
