@@ -62,12 +62,11 @@ Build your Angular app by npm scripts commands:
 This application use JWT authentication.  Call /oauth/token endpoint for authentication.
 Websocket also has support for JWT validation.
 
+`Remove from keys.json with your secret key from control version!!`
 
 # Websocket
 
 Websocket has basic realization of invoking server methods from client and client methods from server.
-
-Remove from keys.json with your secret key from control version!!
 
 This application use basic realization of Identity framework without EntityFrameowork or any other real DB. You can change working logic with DB in CustomUserManager and CustomUserStore classes.
 
