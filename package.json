@@ -17,7 +17,9 @@
     "test": "./node_modules/.bin/karma start karma.conf.js",
     "pree2e": "webdriver-manager update --standalone false --gecko false --quiet",
     "e2e": "./node_modules/.bin/protractor ./protractor.conf.js",
-    "srcmap": "./node_modules/.bin/source-map-explorer ./wwwroot/vendor-2c4406752d2c06d23900.js"
+    "srcmap": "./node_modules/.bin/source-map-explorer ./wwwroot/vendor-2c4406752d2c06d23900.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [
     "ASP.NET Core",
@@ -81,7 +83,8 @@
     "web-animations-js": "^2.2.5",
     "webpack": "^3.0.0",
     "webpack-subresource-integrity": "^1.0.0-rc.1",
-    "zone.js": "^0.8.12"
+    "zone.js": "^0.8.12",
+    "snyk": "^1.83.0"
   },
   "devDependencies": {
     "@angular/cli": "^1.2.0",
@@ -118,5 +121,6 @@
     "ie 11",
     "not ie < 11"
   ],
-  "false": {}
+  "false": {},
+  "snyk": true
 }
