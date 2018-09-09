@@ -79,7 +79,7 @@
     "typescript": "^2.4.1",
     "url-loader": "^0.6.0",
     "web-animations-js": "^2.2.5",
-    "webpack": "^3.0.0",
+    "webpack": "^4.0.0",
     "webpack-subresource-integrity": "^1.0.0-rc.1",
     "zone.js": "^0.8.12"
   },
